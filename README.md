@@ -1,6 +1,6 @@
 
 # RetroAct
-![RetroAct Banner](RetroAct2.png)
+![RetroAct Banner](RetroAct.png)
 Frontend interface to Retrogaming, inspired in Steam Big Picture Mode and Kart  Project
 
 ## References
