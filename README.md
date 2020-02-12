@@ -1,7 +1,7 @@
 
 # RetroAct
 ![RetroAct Banner](RetroAct.png)
-Frontend interface to Retrogaming, inspired in Steam Big Picture Mode and Kart  Project
+## Frontend interface to Retrogaming, inspired in Steam Big Picture Mode and Kart  Project
 
 ## References
 [Kart Project](https://github.com/maddox/kart)
