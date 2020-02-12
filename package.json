@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatonerijr/RetroBigPicture-TMP-.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatonerijr/RetroBigPicture-TMP-/issues"
+  },
+  "homepage": "https://github.com/renatonerijr/RetroBigPicture-TMP-#readme",
+  "dependencies": {
+    "gamepad": "^1.6.0"
+  }
 }

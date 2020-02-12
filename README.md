@@ -1,4 +1,6 @@
-# RetroBigPicture *This name is temporarily
+
+# RetroAct
+![RetroAct Banner](RetroAct.png)
 Frontend interface to Retrogaming, inspired in Steam Big Picture Mode and Kart  Project
 
 ## References
