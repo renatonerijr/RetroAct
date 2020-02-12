@@ -26,7 +26,7 @@ npm install
 
 And run with:
 ```bash
-npm start
+npm run-script electron-dev
 ```
 
 <a name="credits"></a>
