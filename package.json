@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/renatonerijr/RetroAct#readme",
   "dependencies": {
-    "gamepad": "^1.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "^0.9.5"
