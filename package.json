@@ -1,35 +1,52 @@
 {
-  "name": "retro",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "main": "public/electron.js",
-    "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron ./public/electron.js\"",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/renatonerijr/RetroAct.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/renatonerijr/RetroAct/issues"
-  },
-  "homepage": "https://github.com/renatonerijr/RetroAct#readme",
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^0.9.5"
-  },
-  "devDependencies": {
-    "concurrently": "^5.1.0",
-    "electron": "^8.0.0",
-    "electron-is-dev": "^1.1.0",
-    "wait-on": "^4.0.0"
-  }
+	"name": "retroact",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./src/main.js",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"nwjs-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && NWJS_START_URL=http://localhost:3000 nw .\" "
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/renatonerijr/RetroAct.git"
+	},
+	"author": "Renato Neri Jr",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/renatonerijr/RetroAct/issues"
+	},
+	"homepage": "https://github.com/renatonerijr/RetroAct#readme",
+	"dependencies": {
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-scripts": "^0.9.5"
+	},
+	"chromium-args": "--mixed-context",
+	"node-remote": "http://localhost:3000",
+	"build": {
+		"nwVersion": "0.44.1-sdk"
+	},
+	"devDependencies": {
+		"concurrently": "^5.1.0",
+		"wait-on": "^4.0.0"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
