@@ -6,7 +6,7 @@ class App extends Component {
 
     render() {
         const process = window.require('process')
-        console.log(process.versions)
+
         return (
             <div className="App">
                 <div className="App-header">
