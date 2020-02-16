@@ -16,12 +16,11 @@ The reason that I don't use Electron it's because I can't run Node commands, at 
 ## Instalation
 This should be really simple to install, and intended to run in linux systems primarily
 
-Then you need to install the node dependencies:
+You gonna need to install the node dependencies:
 ```bash
 npm install
 ```
-
-You gonna need to install NW.JS in your system, the simplest way is to install with nw.js manager
+Then you will need to install Nw.js in your system, the simplest way is to install with nw.js manager
 ```bash
 npm i -g nwjs
 //And install with
