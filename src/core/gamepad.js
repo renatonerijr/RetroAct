@@ -19,11 +19,17 @@ function pollGamepads() {
 
 function buttonPressed(b) {
 
-
     if (typeof(b) === "object") {
         return b.pressed;
     }
     return b === 1.0;
+}
+
+function axesMoved(b){
+    if ( b !== 0 ){
+        return true
+    }
+    return false
 }
 
 function gamepadLoop() {
@@ -31,24 +37,17 @@ function gamepadLoop() {
 
     var gp = gamepads[0];
 
-    if (!gamepads || !gp) {
-        return;
+    for ( let button in gp.buttons ) {
+
+        if(buttonPressed(gp.buttons[button])){
+            console.log("Button Pressed: " + button)
+        }
     }
 
-    if (buttonPressed(gp.buttons[0])) {
-        console.log('Button Pressed')
-    }
-
-    if (buttonPressed(gp.buttons[1])) {
-        console.log('Button Pressed 2')
-    }
-
-    if (buttonPressed(gp.buttons[2])) {
-        console.log('Button Pressed 3')
-    }
-
-    if (buttonPressed(gp.buttons[3])) {
-        console.log('Button Pressed 4')
+    for ( let axes in gp.axes ){
+        if(axesMoved(gp.axes[axes])){
+            console.log("Axis " + axes + " value: " + gp.axes[axes])
+        }
     }
 
     start = window.requestAnimationFrame(gamepadLoop);
