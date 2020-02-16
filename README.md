@@ -3,7 +3,9 @@
 ![RetroAct Banner](RetroAct.png)
 ### Frontend interface to Retrogaming, inspired in Steam Big Picture Mode and Kart Project
 
-The idea behind is to create a react interface + electron to launch games with RetroArch and have media options like Netflix and Youtube. When installed soon as the operation system boots, the interface enter in full-screen mode.
+The idea behind is to create a react interface + nw.js to launch games with RetroArch and have media options like Netflix and Youtube. When installed, soon as the operating system boots, the interface enters in full-screen mode.
+
+The reason that I don't use Electron it's because I can't run Node commands, at least I don't know how and besides that Nw.js shows to be easy and simple to develop.
 
 # Table of Contents
 1. [Installation](#install)
@@ -14,19 +16,20 @@ The idea behind is to create a react interface + electron to launch games with R
 ## Instalation
 This should be really simple to install, and intended to run in linux systems primarily
 
-You need to install [g++](https://unix.stackexchange.com/questions/140350/linux-g-command-not-found):
-```bash
-apt-get install build-essential
-```
-
-Then you need to install the node dependencies:
+You gonna need to install the node dependencies:
 ```bash
 npm install
+```
+Then you will need to install Nw.js in your system, the simplest way is to install with nw.js manager
+```bash
+npm i -g nwjs
+//And install with
+nw install 0.44.1-sdk
 ```
 
 And run with:
 ```bash
-npm run-script electron-dev
+npm run-script nwjs-dev
 ```
 
 <a name="credits"></a>
