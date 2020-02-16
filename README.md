@@ -3,9 +3,9 @@
 ![RetroAct Banner](RetroAct.png)
 ### Frontend interface to Retrogaming, inspired in Steam Big Picture Mode and Kart Project
 
-The idea behind is to create a react interface + nw.js to launch games with RetroArch and have media options like Netflix and Youtube. When installed soon as the operation system boots, the interface enter in full-screen mode.
+The idea behind is to create a react interface + nw.js to launch games with RetroArch and have media options like Netflix and Youtube. When installed, soon as the operating system boots, the interface enters in full-screen mode.
 
-The reason that I don't use Electron it's because I can't run Node commands, at least I don't know how and besides that Nw.js shows really simple to development.
+The reason that I don't use Electron it's because I can't run Node commands, at least I don't know how and besides that Nw.js shows to be easy and simple to develop.
 
 # Table of Contents
 1. [Installation](#install)
